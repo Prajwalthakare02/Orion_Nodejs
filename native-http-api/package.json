@@ -1,0 +1,12 @@
+{
+  "name": "node-native-http-api",
+  "version": "1.0.0",
+  "description": "Custom HTTP Server using native Node.js http module",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Prajwal",
+  "license": "ISC"
+}
