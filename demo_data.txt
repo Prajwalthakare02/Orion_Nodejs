@@ -1,3 +1,0 @@
-Hello! This is the first line of the file.
-File handling in Python is powerful for permanent storage.
-This line was appended later without deleting the old data.
