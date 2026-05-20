@@ -1,0 +1,170 @@
+# ==========================================
+# Python Control Flow Assessment Solutions
+# ==========================================
+
+print("=== Starting Control Flow Assessment ===\n")
+
+# --- Q1. Nested Condition ---
+print("--- Q1. Nested Condition ---")
+x = 15
+if x > 10:
+    if x % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
+else:
+    print("Small")
+
+# --- Q2. Range Reverse ---
+print("\n--- Q2. Range Reverse ---")
+for i in range(5, 0, -1):
+    print(i)
+
+# --- Q3. While Loop ---
+print("\n--- Q3. While Loop ---")
+x = 1
+while x < 10:
+    x *= 2
+    print(x)
+
+# --- Q4. Break and Continue ---
+print("\n--- Q4. Break and Continue ---")
+for i in range(1, 6):
+    if i == 3:
+        continue
+    if i == 5:
+        break
+    print(i)
+
+# --- Q5. For Else ---
+print("\n--- Q5. For Else ---")
+for i in range(3):
+    if i == 5:
+        break
+else:
+    print("Completed")
+
+# --- Q6. Nested Loop ---
+print("\n--- Q6. Nested Loop ---")
+for i in range(2):
+    for j in range(3):
+        print(i + j)
+
+# --- Q7. Infinite Loop Identification ---
+print("\n--- Q7. Infinite Loop Identification ---")
+x = 5
+print("Description: This is an infinite loop because x is always 5 (never decremented).")
+print("Demonstrating safely (breaking after 3 prints):")
+safe_counter = 0
+while x > 0:
+    print(x)
+    safe_counter += 1
+    if safe_counter >= 3:
+        print("[Safety Break Triggered]")
+        break
+
+# --- Q8. Condition Flow ---
+print("\n--- Q8. Condition Flow ---")
+x = 25
+if x > 20:
+    print("A")
+elif x > 10:
+    print("B")
+elif x > 5:
+    print("C")
+
+# --- Q9. Logical Operator ---
+print("\n--- Q9. Logical Operator ---")
+x = 10
+if x > 5 and x < 15:
+    print("Yes")
+
+# --- Q10. Range Step ---
+print("\n--- Q10. Range Step ---")
+for i in range(0, 10, 3):
+    print(i)
+
+# --- Q11. Boolean Condition ---
+print("\n--- Q11. Boolean Condition ---")
+x = 0
+if x:
+    print("True")
+else:
+    print("False")
+
+# --- Q12. While Else ---
+print("\n--- Q12. While Else ---")
+x = 3
+while x > 0:
+    print(x)
+    x -= 1
+else:
+    print("Done")
+
+# --- Q13. Continue Nested ---
+print("\n--- Q13. Continue Nested ---")
+for i in range(3):
+    for j in range(3):
+        if j == 1:
+            continue
+        print(i, j)
+
+# --- Q14. Break Nested ---
+print("\n--- Q14. Break Nested ---")
+for i in range(3):
+    for j in range(3):
+        if j == 2:
+            break
+        print(i, j)
+
+# --- Q15. Condition Order ---
+print("\n--- Q15. Condition Order ---")
+x = 8
+if x > 10:
+    print("A")
+elif x > 5:
+    print("B")
+else:
+    print("C")
+
+# --- Q16. Pattern Trace ---
+print("\n--- Q16. Pattern Trace ---")
+for i in range(1, 4):
+    print(i * "*")
+
+print("\n==========================================")
+print("           SECTION B: PRACTICAL           ")
+print("==========================================\n")
+
+# --- Q17. Even Numbers 1 to n ---
+print("--- Q17. Even Numbers ---")
+n = int(input("Enter a number (n) for Q17: "))
+print(f"Numbers from 1 to {n} and their even status:")
+for i in range(1, n + 1):
+    if i % 2 == 0:
+        print(f"{i} is Even")
+    else:
+        print(f"{i}")
+
+# --- Q18. Divisible by 3 and 5 ---
+print("\n--- Q18. Divisible by 3 and 5 ---")
+num = int(input("Enter a number to check divisibility (Q18): "))
+if num % 3 == 0 and num % 5 == 0:
+    print(f"{num} IS divisible by both 3 and 5.")
+else:
+    print(f"{num} IS NOT divisible by both 3 and 5.")
+
+# --- Q19. While Loop Countdown ---
+print("\n--- Q19. While Loop Countdown ---")
+count_start = int(input("Enter a number to count down from (Q19): "))
+while count_start >= 1:
+    print(count_start)
+    count_start -= 1
+
+# --- Q20. Pattern Print ---
+print("\n--- Q20. Pattern Print ---")
+# The requirement is to print 1 to 3 stars.
+for i in range(1, 4):
+    print("*" * i)
+
+print("\n=== Assessment Complete ===")
