@@ -1,0 +1,9 @@
+node_modules/
+npm-debug.log
+.env
+npm-debug.log*
+.DS_Store
+
+# Ignore nested node_modules for nine folder
+nine/node_modules/
+nine/package-lock.json
